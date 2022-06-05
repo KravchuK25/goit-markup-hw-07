@@ -797,45 +797,41 @@ ul{
 }
 
 
-
-
-
-
-
-
-
-
 /* Portfolio*/
 
-.portfolio{
+.portfolio__container{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.jumper{
+.portfolio__jumper{
     display: flex;
     justify-content: center;
+
     margin-top: 0;
     margin-bottom: 50px;
     padding-left: 0;
 
 }
-.jumper .item{
-    margin-right: 8px;
-   
+.portfolio__item{
+    margin-right: 8px; 
 }
-.jumper .item:last-child{
+.portfolio__item:last-child{
     margin-right: 0;
 }
-.navigation{
+.portfolio__navigation{
     padding: 8px 22px;
-    border: none;
-    color: var(--two-text-color);
-    background-color: #F5F4FA;
+   
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
+
+    border: none;
     border-radius: 4px;
+
+    color: var(--two-text-color);
+    background-color: #F5F4FA;
+
     transition: box-shadow  
     var(--transition-timing)
     var(--transition-function), 
@@ -847,43 +843,27 @@ ul{
     var(--transition-function);
 
 }
-
-.navigation:hover,
-.navigation:focus {
+.portfolio__navigation:hover,
+.portfolio__navigation:focus {
     color: var(--two-accent-color);
     background-color: var(--accent-color);
+
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);    
    }       
 
-
-.img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    
-    
-   
-}
- .container .jub{ 
-    
-
+.portfolio__portfolio-job{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
 
     padding-left: 15px;
     padding-right: 15px;
-    
-   }
-
-.job .title{
-    font-size: 18px;
-    line-height: 2;
-    margin-bottom: 4px;
 }
-.job{
+
+/* portfolio-job */
+.portfolio-job{
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -894,84 +874,87 @@ ul{
     margin-top: -30px;
     
 }
-.job .item{
+.portfolio-job__item{
     flex-basis: calc(100% / 3 - 30px);
-
-   
+    
     margin-top: 30px;
 }
-.job .text{
-    text-align: left;
-}
-.job .item:nth-of-type(3n){
+.portfolio-job__item:nth-of-type(3n){
     margin-right: 0;
 }
-
-.job .item:nth-last-child(-n + 3){
+.portfolio-job__item:nth-last-child(-n + 3){
     margin-bottom: 0;
 }
-.job-text{
+.portfolio-job__img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+    
+   
+}
+.portfolio-job__text-block{
     padding: 20px 24px;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
-    
-
-.job .text{
+.portfolio-job__title{
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 4px;
+}
+.portfolio-job__text{
+    text-align: left;
     color: var(--one-text-color)
 }
 
-
 /* спливаюче вікно */
-.scrolling-link{
-    display: inline-block;
-    transition: 
-    box-shadow
-    var(--transition-timing)
-    var(--transition-function);  
-
-      
-  }
-
-.scrolling-link:hover,
-.scrolling-link:focus{
-   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-   }   
-
-.scrolling-link:hover .scrolling-text,
-.scrolling-link:focus .scrolling-text {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.scrolling-div-img{
+.portfolio-job__scrolling{
     position: relative;
     overflow: hidden;
 }
-
-.scrolling-text{
+.portfolio-scrolling__text{
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     padding: 63px 24px;
+    margin: 0;
+
     font-size: 18px;
     line-height: 1.55;
+
     color: #fff;
     background-color: rgba(33, 150, 243, 0.9);
 
-    
     transform: translateY(100%);  
     transition: 
     transform
     500ms
     var(--transition-function); 
-
 }
-.scrolling-text{
-    margin: 0;
-    }
+.portfolio-job__link{
+    display: inline-block;
+    transition: 
+    box-shadow
+    var(--transition-timing)
+    var(--transition-function);  
+}
+.portfolio-job__link:hover,
+.portfolio-job__link:focus{
+   box-shadow: 
+   1px 4px 6px rgba(0, 0, 0, 0.16),
+   0px 4px 4px rgba(0, 0, 0, 0.06),
+   0px 1px 1px rgba(0, 0, 0, 0.12);
+   }   
+.portfolio-job__link:hover .portfolio-scrolling__text,
+.portfolio-job__link:focus .portfolio-scrolling__text {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
