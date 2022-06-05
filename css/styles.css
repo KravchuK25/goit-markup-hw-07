@@ -913,6 +913,25 @@ ul{
     position: relative;
     overflow: hidden;
 }
+.portfolio-job__link{
+    display: inline-block;
+    transition: 
+    box-shadow
+    var(--transition-timing)
+    var(--transition-function);  
+}
+.portfolio-job__link:hover,
+.portfolio-job__link:focus{
+   box-shadow: 
+   1px 4px 6px rgba(0, 0, 0, 0.16),
+   0px 4px 4px rgba(0, 0, 0, 0.06),
+   0px 1px 1px rgba(0, 0, 0, 0.12);
+   }   
+.portfolio-job__link:hover .portfolio-scrolling__text,
+.portfolio-job__link:focus .portfolio-scrolling__text {
+  transform: translateY(0);
+  opacity: 1;
+}
 .portfolio-scrolling__text{
     position: absolute;
     left: 0;
@@ -933,25 +952,6 @@ ul{
     transform
     500ms
     var(--transition-function); 
-}
-.portfolio-job__link{
-    display: inline-block;
-    transition: 
-    box-shadow
-    var(--transition-timing)
-    var(--transition-function);  
-}
-.portfolio-job__link:hover,
-.portfolio-job__link:focus{
-   box-shadow: 
-   1px 4px 6px rgba(0, 0, 0, 0.16),
-   0px 4px 4px rgba(0, 0, 0, 0.06),
-   0px 1px 1px rgba(0, 0, 0, 0.12);
-   }   
-.portfolio-job__link:hover .portfolio-scrolling__text,
-.portfolio-job__link:focus .portfolio-scrolling__text {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 
