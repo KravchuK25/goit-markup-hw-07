@@ -24,7 +24,7 @@
   </head>
   <body class="body">
     <header class="paig-header">
-      <div class="container header__container">
+      <div class="header__container">
         <a lang="en" class="logo paig-header__logo" href="./index.html"
           >Web<span class="span">Studio</span></a>
           <nav class="nav">
@@ -60,11 +60,19 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container hero__container">
+        <div class="hero__container">
+          <img
+          class="hero__img"
+          src="./hero/hero.jpg"
+          alt="люди в офісі"
+          width="1600"
+          height="600"/>
+          <div>
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="button hero__button" type="button" data-modal-open>
             Заказать услугу
           </button>
+        </div>
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
@@ -152,35 +160,67 @@
       </section>
       <section class="benefits">
         <div class="container benefits__container">
-          <h2 hidden class="visually-hidden">Наши асобености</h2>
+          <h2 hidden class="benefits__hidden">Наши асобености</h2>
           <ul class="benefits__section">
             <li class="item benefits__item">
-              <h3 class="title benefits__title">Внимание к деталям</h3>
-              <p class="text benefits__text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
+              <img
+              class="benefits__img"
+              src="./icon/antenna.svg"
+              alt="антена"
+              width="70px"
+              height="70px"/>
+              <div>
+                <h3 class="title benefits__title">Внимание к деталям</h3>
+                  <p class="text benefits__text">
+                    Идейные соображения, а также начало повседневной работы по
+                    формированию позиции.
+                  </p>
+              </div>
             </li>
-            <li class="item benefits__item">
-              <h3 class="title benefits__title">Пунктуальность</h3>
-              <p class="text benefits__text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="item benefits__item">
+              <li class="item benefits__item">
+              <img
+              class="benefits__img"
+              src="./icon/clock.svg"
+              alt="годинкик"
+              width="70px"
+              height="70px"/>
+            <div>
               <h3 class="title benefits__title">Планирование</h3>
               <p class="text benefits__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
+            </div>
             </li>
             <li class="item benefits__item">
+              <img
+              class="benefits__img"
+              src="./icon/diagram.svg"
+              alt="діаграма"
+              width="70px"
+              height="70px"/>
+              <div>
               <h3 class="title benefits__title">Современные технологии</h3>
               <p class="text benefits__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
+            </div>
+            </li>
+            <li class="item benefits__item">
+              <img
+              class="benefits__img"
+              src="./icon/astronaut.svg"
+              alt="космонавт"
+              width="70px"
+              height="70px"/>
+            <div>
+              <h3 class="title benefits__title">Пунктуальность</h3>
+              <p class="text benefits__text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </div>
             </li>
           </ul>
         </div>
